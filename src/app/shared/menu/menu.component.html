@@ -1,0 +1,19 @@
+<div>
+    <ul>
+        <!--Nos links de rotas devemos usar o routerLink ao invés do href-->
+        <!--Caso o contrário não termos o conceiro de spa porque toda a página será recarregada-->
+        <!--O routerlink melhora a experiencia do usuário e a perfomance da página-->
+        <li><a [routerLink]="['/']" 
+            [routerLinkActive]="['activated']"
+            [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li><a [routerLink]="['/portifolio']" 
+            [routerLinkActive]="['activated']" 
+            >Portifolio</a>
+        </li>
+
+        <!--Já o RouterLinkActive associa uma classe do css ao link ativo-->
+        <!--O RouterLinkActiveOptions adiciona uma propriedade que só ativa a classe css se a rota for exatamente a epecificada
+        no routerLink-->
+    </ul>
+</div>
